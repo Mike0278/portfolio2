@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Portfolio">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div id="container">
+        <div id="head-icon">
+            <div id="info">
+                <p><a href="#"><i class="fa fa-phone" style="font-size:18px"></i> 18002129495</a></p>
+                <p><a href="#"><i class="fa fa-envelope" style="font-size:18px"></i> support@3dart.in</a></p>
+            </div>
+            <div id="icon">
+                <p><a href="#"><i class="fa fa-whatsapp" style="font-size:20px"></i></a></p>
+                <p><a href="#"><i class="fa fa-facebook" style="font-size:20px"></i></a></p>
+                <p><a href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a></p>
+                <p><a href="#"><i class="fa fa-pinterest" style="font-size:20px"></i></a></p>
+            </div>
+        </div>
+        <header id="header">
+            <div id="head-menu">
+                <h1><a href="index.html">Logo Name</a></h1>
+
+                <div class="navbar">
+                    <a href="#" onclick="opensidemenu()">
+                    <i class="fa fa-bars fa-2x"></i></a>
+                    </div><!--navbar-->
+
+                    <div class="sidemenu" id="sidebarleftmenu"> 
+                        
+                        <div class="menus">
+                        <h2>Logo</h2>
+                        <hr>
+                        <a href="index.html">Home</a>
+                        <a href="#service">Services</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                        <a href="#more">More</a>
+                        </div>
+                        <div id="head">                            
+                        </div> 
+                    </div><!--sidemenu-->
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#service">Services</a>
+                            <ul>
+                                <li><a href="#">Models</a></li>
+                                <li><a href="#">SFX & Music</a></li>
+                                <li><a href="#">Weapons</a></li>
+                                <li><a href="#">Parts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#more">More</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <div id="head-img">
+            <div id="details">
+                <h2><span class="span1">Hello, I'm</span></h2>
+                <h1>Moleko Pfoze</h1>
+                <h2>And I'm a <span class="span2">Frontend Developer</span></h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magni soluta dolor, quasi doloribus rem non nihil 
+                    voluptas numquam ea. Recusandae?
+                </p>
+                <br>
+                <button>Download cv</button>
+                <button id="chat-btn">Let's Talk</button>
+            </div>
+            <div id="image">
+                <img src="icons/OIP.jpg" alt="" class="image">
+            </div>
+        </div>
+
+        <div id="modal-container">
+            <div id="modal">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Talk with us!</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="text" name="name" id="" placeholder="Fullname">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" id="" placeholder="Message"></textarea>
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div><!---modal-container-->
+
+        <main>
+            <section id="service">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>
+                        <i class="fa fa-code" style="font-size: 30px;"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quisquam iure nulla reiciendis, dolorum nostrum optio 
+                            tempora culpa accusamus atque aperiam.
+                        </p>
+                        <button><a href="#">Read More</a></button>
+                    </li>
+                    <li>
+                        <i class="fa fa-paint-brush" style="font-size: 30px;"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quisquam iure nulla reiciendis, dolorum nostrum optio 
+                            tempora culpa accusamus atque aperiam.
+                        </p>
+                        <button><a href="#">Read More</a></button>
+                    </li>
+                    <li>
+                        <i class="fa fa-bar-chart" style="font-size: 30px;"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quisquam iure nulla reiciendis, dolorum nostrum optio 
+                            tempora culpa accusamus atque aperiam.
+                        </p>
+                        <button><a href="#">Read More</a></button>
+                    </li>
+                    <li>
+                        <i class="fa fa-search" style="font-size: 30px;"></i>
+                        <h3>SEO</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quisquam iure nulla reiciendis, dolorum nostrum optio 
+                            tempora culpa accusamus atque aperiam.
+                        </p>
+                        <button><a href="#">Read More</a></button>
+                    </li>
+                </ul>
+            </section><!--Service-->
+            <hr>
+            <section id="contact">
+                <h2>Contact Me!</h2>
+                <div id="form">
+                    <form action="" method="post">
+                        <input type="text" name="name" id="" placeholder="Full Name" required>
+                        <input type="email" name="email" id="" placeholder="Email" required>
+                        <input type="text" name="subject" id="" placeholder="Subject" required>
+                        <textarea name="message" id="" placeholder="Mesage" required></textarea>
+                        <button type="submit">Send</button>
+
+                    </form>
+                </div>
+            </section><!--Contact-->
+            <hr>
+            <section>
+                <h2>About Me</h2>
+                <div id="about">
+                <section>  
+                    <img src="image/4.jpg" alt="" class="about-image">
+                </section>
+                <section>
+                    <h3><b>Frontend Developer</b></h3>
+                    <div style="width: 90%; padding: 5px;">
+                        <p><b>Html</b> <span style="float: right;">80%</span></p>
+                        <br>
+                        <p style="background-color: green;width: 80%; height: 10px;">     
+                        </p>
+                        <br>
+                        <p><b>Css</b> <span style="float: right;">90%</span></p>
+                        <br>
+                        <p style="background-color: green;width: 90%; height: 10px;">
+                        </p>
+                        <br>
+                        <p><b>Javascript</b> <span style="float: right;">70%</span></p>
+                        <br>
+                        <p style="background-color: green;width: 70%; height: 10px;">
+                        </p>
+
+                    </div>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Porro quasi cupiditate odio fuga odit veniam dignissimos 
+                        delectus officia, modi vitae sint molestias dolore non ut 
+                        minus nam exercitationem aliquid enim vel dolor assumenda 
+                        soluta necessitatibus? Natus at neque beatae ipsam, ad nobis 
+                        nesciunt. Magnam doloremque earum qui? Deserunt, qui modi.
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Qui quis odio error a impedit tenetu.
+                    </p>
+                    
+                    <button><a href="#">Know More</a></button>
+
+                </section>
+            </div>
+            </section><!--about-->
+            <hr>
+            <section id="more">
+                <h2>Recent Projects</h2>
+                <ul>
+                    <li>
+                    <img src="image/clpp-msk-txt.jpg" alt="" width="200px" height="200px">
+                    <caption>Graphic Design Site</caption>
+                        <button><a href="#">Visit</a></button>
+                    </li>
+                    <li>
+                        <img src="image/travels&explore.jpg" alt="" width="200px" height="200px">
+                        <caption>E-com Site</caption>
+                        <button><a href="#">Visit</a></button>
+                    </li>
+                    <li>
+                        <img src="image/image-gallery.jpg" alt="" width="200px" height="200px">
+                        <caption>Image&Video Site</caption>
+                        <button><a href="#">Visit</a></button>
+                    </li>
+                </ul>
+            </section><!--More-->
+
+        </main>
+        <footer>
+            <section id="section1">
+                <div class="div">
+                    <h3>List</h3>
+                </div>
+                <div class="div">
+                    <h3>List</h3>
+                </div>
+                <div class="div">
+                    <h3>List</h3>
+                </div>
+                <div class="div">
+                    <h3>List</h3>
+                </div>
+
+            </section>
+            <section id="section2">
+                <p>Copyright &copy 2024. All Rights And Reserved.</p>
+            </section>
+        </footer>
+    </div><!--container-->
+
+    <script src="js/index.js"></script>
+</body>
+</html>

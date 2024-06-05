@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(darkslategrey,yellow);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+header{
+    position: sticky;
+    z-index: 1;
+}
+
+.image{
+    height: 300px;
+    width: 250px;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+}
+#head-icon{
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+#head-icon p {
+    margin: auto;
+}
+#head-icon a{
+    text-decoration: none;
+    color: white;
+}
+#head-icon #info {
+    display: flex;
+    width: 80%;
+}
+#head-icon #icon{
+    display: flex;
+    width: 100%;
+}
+#head-menu{
+    position: relative;
+    height: 60px;
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+#head-menu h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+#menu {
+    display: block;
+}
+#menu ul{
+    display: flex;
+}
+#menu ul li{
+    list-style-type: none;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #fff;
+    font-weight: bold;
+}
+#menu ul li:first-child{
+    border: none;
+}
+#menu ul ul{
+    display: none;
+}
+#menu ul a:hover{
+    color: orangered;
+}
+#menu ul ul li{
+    border: none;
+    background-color: darkslategray;
+}
+#menu ul li:hover>ul{
+    display: block;
+}
+#menu a{
+    text-decoration: none;
+    color: #fff;
+}
+#head-img{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+
+}
+.span1{
+    color: orangered;
+}
+.span2{
+    color: orange;
+}
+#details{
+    text-align: left;
+    width: 90%;
+
+}
+#icon .fa-whatsapp:hover{
+    color: #075e54;
+}
+#icon .fa-facebook:hover{
+    color: #1877f2;
+}#icon .fa-twitter:hover{
+    color: #1da1f2;
+}#icon .fa-pinterest:hover{
+    color: #e60023;
+}
+#details button{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    background: rgb(63, 181, 228);
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#details button:hover{
+    background-color: blue;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #fff;
+}
+
+#modal-container{
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+}
+#modal{
+    background-color: white;
+    margin: 10% auto;
+    width: 50%;
+}
+#modal form{
+    width: 400px;
+    background-color: lightgray;
+    padding: 10px;
+}
+#modal input, textarea{
+    margin: auto;
+    width: 300px;
+}
+
+#modal #submit{
+    width: 335px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.closeBtn{
+    color: lightgrey;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.modal-header h2, .modal-footer h3{
+    margin: 0;
+}
+.modal-header{
+    background-color: coral;
+    color: white;
+    padding: 15px;
+}
+.modal-body{
+    padding: 10px 20px;
+}
+.modal-footer{
+    background-color: coral;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    height: 100%;
+    color: #000;
+    padding: 1rem;
+
+}
+main section{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+main section h2{
+    margin-bottom: 20px;
+}
+#service ul{
+    display: flex;
+    gap: 1rem;
+}
+#service ul li{
+    list-style-type: none;
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    color: black;
+    border-radius: 15px;
+
+}
+#service button{
+    width: 150px;
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#service button a{
+    text-decoration: none;
+    color: #fff;
+}
+#service i{
+    color: darkblue;
+}
+#contact{
+    display: grid;
+    place-items: center;
+}
+#form{
+    background-color: lightgray;
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    display: grid;
+    place-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
+
+}
+form input, textarea{
+    width: 300px;
+    padding: 1rem;
+    border: solid 1px #000;
+}
+form textarea{
+    height: 80px;
+}
+form button{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    width: 120px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+#about{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#about section{
+    width: 100%;
+}
+#about section h3{
+    margin-top: 0;
+    text-align: left;
+    width: 90%;
+}
+#about .about-image{
+    width: 90%;
+}
+#about p {
+    width: 90%;
+    text-align: left;
+}
+#about button{
+    width: 150px;
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#about button a{
+    text-decoration: none;
+    color: #fff;
+}
+#more ul{
+    display: flex;
+    gap: 1rem;
+}
+#more ul li{
+    list-style-type: none;
+    width: 300px;
+    height: 300px;
+    background-color: darkslategray;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 15px;
+}
+#more button{
+    width: 150px;
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#more button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer{
+    position: absolute;
+    bottom: -250px;
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    display: grid;
+}
+footer #section1{
+    height: 200px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+footer #section1 .div{
+    width: 100%;
+    height: 80%;
+    border-left: 1px solid #fff;
+
+}
+#section1 .div:first-child{
+    border: none;
+}
+footer #section2{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #fff;
+}
+
+.navbar {
+    display: none;
+}
+.sidemenu{
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+    body{
+        margin: auto;
+    }
+    #container{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    #menu ul li{
+        width: 100%;
+    }
+    #service ul{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    #service ul li{
+        width: 80%;
+    }
+
+    #more ul{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    #more ul li{
+        width: 80%;
+    }
+    #modal{
+        width: 60%;
+        background-color: lightgray;
+    }
+    #modal form{
+        width: 100%;
+        padding: 0;
+
+    }
+    #modal #submit{
+        width: 100%;
+    }
+    #modal input{
+        width: 90%;
+    }
+    #modal textarea{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:720px){
+    #modal{
+        width: 70%;
+    }
+    #modal form{
+        width: 100%;
+        padding: 0;
+
+    }
+    #modal #submit{
+        width: 100%;
+    }
+    #modal input{
+        width: 90%;
+    }
+    #modal textarea{
+        width: 93%;
+    }
+    #container{
+        padding: 0;
+        margin: 0;
+
+    }
+    #contact{
+        width: 100%;
+        padding: 0;
+    }
+    #form{
+        width: 100%;
+    }
+    #form input, textarea{
+        width: 100%;
+        height: 30px;
+        padding: 10px 10px;
+    }
+    #form button{
+        padding: 0;
+        height: 40px;
+    }
+    .navbar{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    .navbar i{
+        color: #fff;
+        font-size: 20px;
+    }
+    .sidemenu{
+        height:0px;
+        width:100%;
+        position:fixed;
+        top:0px;
+        left:0px;
+        bottom: 0px;
+        overflow-x:hidden;
+        transition:all 0.4s;
+        display: block; 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        overflow-y: hidden;
+    }
+    .menus{
+        background-color:cadetblue;
+    }
+    #head{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+    
+    
+    #head-icon{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #info{
+        margin: auto;
+    }
+    #head-icon #icon{
+        display: none;
+    }
+    .sidemenu h2{
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .sidemenu a{
+        text-decoration:none;
+        color:white;
+        display:block;
+        margin:20px;
+        text-align:left;
+        font-weight: bold;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        margin: auto;
+        margin-top: 10px;
+    }
+        .sidemenu a:hover{
+        color:orangered;
+        
+    }
+    
+    
+    #head-img{
+        display: block;
+        place-items: center;
+        width: 90%;
+        height: 100%;
+    }
+    #details{
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+    }
+    #image{
+        width: 100%;
+        padding: 1rem;
+
+    }
+    .image{
+        height: 230px;
+    }
+    
+    main section{
+        height: 100%;
+    }
+    main section h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #service ul{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    #service ul li{
+        width: 100%;
+    }
+    #service button{
+        width: 90%;
+    }
+   
+    #about{
+        display: block;
+    }
+    #about section{
+        padding: 0;
+    }
+    #about section h3{
+        margin-top: 20px;
+    }
+    #more ul{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    #more ul li{
+        width: 100%;
+    }
+
+    footer #section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #section1 .div:nth-child(3){
+        border: none;
+    }
+}
