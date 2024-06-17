@@ -446,6 +446,9 @@ footer #section2{
 }
 
 @media screen and (max-width:720px){
+    #container{
+        width: 100℅;
+    }
     #modal{
         width: 70%;
     }
