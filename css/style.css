@@ -448,6 +448,7 @@ footer #section2{
 @media screen and (max-width:720px){
     #container{
         width: 100℅;
+        position: absolute;
     }
     main{
         width: 100℅;
@@ -502,7 +503,7 @@ footer #section2{
     }
     .sidemenu{
         height:0px;
-        width:100%;
+        width:100vh;
         position:fixed;
         top:0px;
         left:0px;
