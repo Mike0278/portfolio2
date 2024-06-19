@@ -509,7 +509,7 @@ footer #section2{
         bottom: 0px;
         overflow-x:hidden;
         transition:all 0.4s;
-        display: none; 
+        display: block; 
         display: grid;
         grid-template-columns: 2fr 1fr;
         overflow-y: hidden;
