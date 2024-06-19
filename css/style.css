@@ -447,7 +447,7 @@ footer #section2{
 
 @media screen and (max-width:720px){
     #container{
-        width: 100℅;
+        width: 100vh;
         position: absolute;
     }
     main{
