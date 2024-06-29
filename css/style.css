@@ -569,11 +569,11 @@ footer #section2{
     #details{
         text-align: center;
         margin: auto;
-        padding: 1rem;
+        padding: 1rem 0rem;
     }
     #image{
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 0rem;
 
     }
     .image{
