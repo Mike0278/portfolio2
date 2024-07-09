@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    background-color: #000;
+    position: relative;
+    padding: 10px 0px;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+nav ul li:first-child{
+    border: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav h1{
+    color: #fff;
+    text-align: left;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar{
+    display: none;
+}
+.sidemenu{
+    display: none;
+}
+.section1{
+    background-color: #030116;
+    padding: 10px 0px;
+}
+#image{
+    width: 50%;
+}
+
+.image{
+    width: 100%;
+}
+#info{
+    width: 40%;
+    display: grid;
+    gap: 10px;
+    color: white;
+}
+#btn{
+    cursor: pointer;
+    width: 200px;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: orangered;
+}
+
+.section2{
+    background-color: blue;
+    padding: 20px 0px;
+    display: grid;
+    place-items: center;
+}
+#text{
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+#sub{
+    width: 50%;
+    text-align: center;
+}
+#sub .input{
+    width: 60%;
+    padding: 5px;
+}
+#sub #submit{
+    background-color: #000;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+}
+.section3{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+}
+#virtual{
+    background-color: #030116;
+    width: 32%;
+    display: grid;
+    gap: 20px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#hybrid{
+    background-color: rgb(66, 66, 66);
+    width: 32%;
+    display: grid;
+    gap: 20px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#person{
+    background-color: #030116;
+    width: 32%;
+    display: grid;
+    gap: 20px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+.section3 #button{
+    width: 100px;
+    padding: 5px 0px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.section3 #button2{
+    width: 100px;
+    padding: 5px 0px;
+    margin: auto;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.section4{
+    padding: 20px 0px;
+}
+.section4 #image2{
+    width: 45%;
+}
+.section4 .image2{
+    width: 100%;
+}
+.section4 #text2{
+    width: 45%;
+    display: grid;
+    gap: 10px;
+    margin: auto;
+}
+#text2 button{
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.section5{
+    padding: 20px 0px;
+    background-color: #030116;
+    color: #fff;
+}
+.section5 #image3{
+    width: 45%;
+}
+.section5 .image3{
+    width: 100%;
+}
+.section5 #text3{
+    width: 50%;
+    display: grid;
+    gap: 10px;
+}
+#text3 button{
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.section6{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+.section6 .members{
+    display: grid;
+    gap: 10px;
+}
+.members{
+    text-align: center;
+}
+.members ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    gap: 10px;
+}
+.members ul li{
+    list-style: none;
+    background-color: lightgray;
+    color: #000;
+    padding: 20px 0px;
+    display: grid;
+    gap: 15px;
+    border-radius: 3px;
+}
+.members img{
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+}
+.members .icons i{
+    cursor: pointer;
+    padding: 5px;
+    color: #000;
+}
+.members p{
+    width: 80%;
+    margin: auto;
+}
+.section7{
+    padding: 10px 0px;
+}
+.section7 #contact{
+    display: grid;
+    gap: 10px;
+    width: 45%;
+}
+.section7 #contact h2{
+    text-align: center;
+}
+.section7 #contact ul li{
+    list-style: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.section7 #contact ul li:last-child{
+    border: none;
+}
+.section7 #map{
+    width: 50%;
+}
+.section7 #map iframe{
+    width: 100%;
+    height: 300px;
+
+    border-radius: 5px;
+}
+footer{
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #030116;
+    color: #fff;
+}
+@media screen and (max-width:720px) {
+    
+    nav ul{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    .sidemenu{
+        height:0px;
+        width:100%;
+        position:fixed;
+        top:0px;
+        left:0px;
+        bottom: 0px;
+        overflow-x:hidden;
+        transition:all 0.4s;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        overflow-y: hidden;
+    }
+    .sidemenu h2{
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .sidemenu a{
+        text-decoration:none;
+        color:white;
+        display:block;
+        margin:20px;
+        text-align:left;
+        font-weight: bold;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        margin: auto;
+        margin-top: 10px;
+    }
+        .sidemenu a:hover{
+        color:orangered;
+        
+    }
+    .menus{
+        background-color:cadetblue;
+    }
+    #head{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+    
+    .flex{
+        display: block;
+    }
+    .container{
+        display: grid;
+        gap: 10px;
+    }
+    #info{
+        width: 100%;
+    }
+    #image{
+        width: 100%;
+    }
+    .section2{
+        margin: auto;
+    }
+    #text{
+        width: 100%;
+        text-align: left;
+    }
+    #sub{
+        width: 100%;
+        text-align: left;
+    }
+    .section3 p{
+        width: 90%;
+        margin: auto;
+    }
+    #virtual{
+        width: 100%;
+    }
+    #hybrid{
+        width: 100%;
+    }
+    #person{
+        width: 100%;
+    }
+    .section4 #image2{
+        width: 100%;
+    }
+    .section4 #text2{
+        width: 100%;
+    }
+    .section5 #image3{
+        width: 100%;
+    }
+    .section5 #text3{
+        width: 100%;
+    }
+    .members ul{
+        display: block;
+    }
+    .members ul li{
+        margin-top: 10px;
+    }
+    .section7 #contact{
+        width: 100%;
+    }
+    .section7 #map{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
